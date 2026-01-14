@@ -30,7 +30,7 @@ steps:
     event:
       - push
     branch:
-      - master
+      - main
 
 - name: docker-stable-build
   image: plugins/docker
