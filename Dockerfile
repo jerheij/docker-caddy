@@ -2,6 +2,7 @@ FROM caddy:2-builder AS builder
 
 RUN xcaddy build \
     --with github.com/caddy-dns/cloudflare \
+    --with github.com/mholt/caddy-l4 \
     --output /usr/bin/caddy-custom
 
 FROM caddy:2-alpine
